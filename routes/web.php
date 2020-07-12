@@ -12,4 +12,4 @@ Route::get('/articles', 'ArticleController@index')
     ->name('articles.index');
 
 Route::get('/articles/{id}', 'ArticleController@show')
-    ->name('articles.show');
+    ->name('article.show');
