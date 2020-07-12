@@ -15,6 +15,7 @@
             <div>
                 @yield('content')
             </div>
+            <a href="{{action('ArticleController@index')}}">Статьи</a>
         </div>
     </body>
 </html>
