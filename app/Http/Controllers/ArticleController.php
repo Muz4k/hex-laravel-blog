@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Article;
 
 class ArticleController extends Controller
@@ -41,6 +42,7 @@ class ArticleController extends Controller
 
         $article->save();
 
+        $request->session()->flash('status', 'Article was created!');
 
         return redirect()
             ->route('articles.index');
@@ -64,6 +66,8 @@ class ArticleController extends Controller
 
         $article->fill($data);
         $article->save();
+
+        $request->session()->flash('status', 'Article was updated!');
 
         return redirect()
             ->route('articles.index');
