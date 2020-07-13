@@ -19,3 +19,9 @@ Route::get('/articles/create', 'ArticleController@create')
 
 Route::get('/articles/{id}', 'ArticleController@show')
     ->name('article.show');
+
+Route::patch('/articles/{id}', 'ArticleController@update')
+    ->name('articles.update');
+
+Route::get('/articles/{id}/edit', 'ArticleController@edit')
+    ->name('articles.edit');
