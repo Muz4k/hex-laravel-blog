@@ -28,3 +28,11 @@ Route::get('/articles/{id}/edit', 'ArticleController@edit')
 
 Route::delete('/articles/{id}', 'ArticleController@destroy')
     ->name('articles.destroy');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

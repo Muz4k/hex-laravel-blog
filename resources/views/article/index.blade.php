@@ -3,13 +3,27 @@
 @if (Session::has('status'))
     {{ Session::get('status') }}
 @endif
-
 @section('content')
-    <h1>Список статей</h1>
-    @foreach ($articles as $article)
-        <h2><a href="{{route('article.show', $article)}}">{{$article->name}}</a></h2>
-        <div>{{Str::limit($article->body, 200)}}</div>
-    @endforeach
-
-    <h3><a href="{{route('articles.create')}}">Создать статью</a></h3>
-@endsection
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                Articles <small>({{ $articles->count() }})</small>
+            </div>
+            <div class="card-body">
+                @forelse ($articles as $article)
+                    <article class="mb-3">
+                        <h2>{{ $article->title }}</h2>
+                        <p class="m-0">{{ $article->body }}</body>
+                        <div>
+                            @foreach ($article->tags as $tag)
+                                <span class="badge badge-light">{{ $tag}}</span>
+                            @endforeach
+                        </div>
+                    </article>
+                @empty
+                    <p>No articles found</p>
+                @endforelse
+            </div>
+        </div>
+    </div>
+@stop
