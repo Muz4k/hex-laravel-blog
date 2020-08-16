@@ -20,19 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1b574bc-71d3-4d64-b583-6cff6c6a8788" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Article.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_12_074315_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_12_074315_create_articles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/article/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/article/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +173,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597599364122</updated>
-      <workItem from="1597599365247" duration="2037000" />
+      <workItem from="1597599365247" duration="3478000" />
     </task>
     <servers />
   </component>
@@ -210,9 +200,13 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="767" y="341" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1597599722727" />
-    <state x="652" y="299" width="672" height="678" key="search.everywhere.popup" timestamp="1597601066643">
+    <state x="658" y="273" width="665" height="568" key="NewPhpClassDialog" timestamp="1597602098109">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="652" y="299" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1597601066643" />
+    <state x="658" y="273" width="665" height="568" key="NewPhpClassDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1597602098109" />
+    <state x="652" y="299" width="672" height="678" key="search.everywhere.popup" timestamp="1597602069972">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="652" y="299" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1597602069972" />
   </component>
 </project>
