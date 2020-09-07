@@ -1,5 +1,7 @@
 <?php
 
+use App\Articles\ArticlesRepository;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -8,8 +10,11 @@ Route::get('/', function () {
 
 Route::get('/about','PageController@about');
 
-Route::get('/articles', 'ArticleController@index')
-    ->name('articles.index');
+Route::get('/articles', function () {
+    return view('article.index', [
+        'articles' => App\Article::all(),
+    ]);
+});
 
 Route::post('/articles', 'ArticleController@store')
     ->name('articles.store');
@@ -33,6 +38,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
+Route::get('search', function (ArticlesRepository $repository) {
+    $articles = $repository->search(request('q'));
 
-Route::get('/home', 'HomeController@index')->name('home');
+    return view('article.index', [
+        'articles' => $articles,
+    ]);
+});

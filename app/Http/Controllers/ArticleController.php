@@ -8,10 +8,8 @@ use App\Article;
 
 class ArticleController extends Controller
 {
-    public function index()
+    public function index($articles)
     {
-        $articles = Article::paginate();
-
         return view('article.index', compact('articles'));
     }
 
